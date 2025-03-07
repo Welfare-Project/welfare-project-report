@@ -1,0 +1,14 @@
+"latex-workshop.latex.search.rootFiles.exclude": ["**/sampleReport.tex"],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-pdfxe",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ]
+    }
+  ]

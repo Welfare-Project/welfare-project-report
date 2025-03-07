@@ -3,23 +3,21 @@
 
 \ifproject
 \begin{abstractTH}
-เขียนบทคัดย่อของโครงงานที่นี่
 
-การเขียนรายงานเป็นส่วนหนึ่งของการทำโครงงานวิศวกรรมคอมพิวเตอร์
-เพื่อทบทวนทฤษฎีที่เกี่ยวข้อง อธิบายขั้นตอนวิธีแก้ปัญหาเชิงวิศวกรรม และวิเคราะห์และสรุปผลการทดลองอุปกรณ์และระบบต่างๆ
-\enskip อย่างไรก็ดี การสร้างรูปเล่มรายงานให้ถูกรูปแบบนั้นเป็นขั้นตอนที่ยุ่งยาก
-แม้ว่าจะมีต้นแบบสำหรับใช้ในโปรแกรม Microsoft Word แล้วก็ตาม
-แต่นักศึกษาส่วนใหญ่ยังคงค้นพบว่าการใช้งานมีความซับซ้อน และเกิดความผิดพลาดในการจัดรูปแบบ กำหนดเลขหัวข้อ และสร้างสารบัญอยู่
-\enskip ภาควิชาวิศวกรรมคอมพิวเตอร์จึงได้จัดทำต้นแบบรูปเล่มรายงานโดยใช้ระบบจัดเตรียมเอกสาร
-\LaTeX{} เพื่อช่วยให้นักศึกษาเขียนรายงานได้อย่างสะดวกและรวดเร็วมากยิ่งขึ้น
+โครงการนี้มีวัตถุประสงค์เพื่อพัฒนา ระบบจัดเก็บข้อมูลสำหรับนักสังคมสงเคราะห์ ประจำโรงพยาบาลมหาราชนครเชียงใหม่ เนื่องจากปัจจุบันยังไม่มีระบบที่มีประสิทธิภาพในการจัดการข้อมูล ส่งผลให้กระบวนการทำงานอาจเกิดความล่าช้าและส่งผลต่อการให้บริการแก่ผู้รับสวัสดิการ
+
+ระบบที่พัฒนาขึ้นเป็น เว็บแอปพลิเคชัน ที่ช่วยให้นักสังคมสงเคราะห์สามารถจัดเก็บและบริหารจัดการข้อมูลได้อย่างเป็นระบบ ทั้งยังสามารถนำข้อมูลที่บันทึกไว้มาวิเคราะห์และต่อยอดการทำงานได้อย่างสะดวกและมีประสิทธิภาพยิ่งขึ้น
+
+เว็บแอปพลิเคชันดังกล่าวพัฒนาด้วย Next.js สำหรับฝั่ง Front-end และใช้ NestJS สำหรับ Back-end ในส่วนของฐานข้อมูล ใช้ PostgreSQL เพื่อจัดเก็บและบริหารจัดการข้อมูลอย่างเป็นระบบ นอกจากนี้ การทดสอบและการปรับใช้ (Deployment) ระบบจะดำเนินการผ่าน Docker เพื่อความยืดหยุ่นและประสิทธิภาพสูงสุดในการใช้งาน
 \end{abstractTH}
 
 \begin{abstract}
-The abstract would be placed here. It usually does not exceed 350 words
-long (not counting the heading), and must not take up more than one (1) page
-(even if fewer than 350 words long).
 
-Make sure your abstract sits inside the \texttt{abstract} environment.
+This project aims to develop a data management system for social workers at Maharaj Nakorn Chiang Mai Hospital. Currently, there is no efficient system for managing information, which may cause delays in work processes and affect the delivery of services to beneficiaries.
+
+The developed system is a web application designed to help social workers systematically store and manage data. Additionally, it enables users to analyze and utilize stored information to enhance their work efficiency.
+    
+The web application is built using Next.js for the front-end and NestJS for the back-end. For database management, PostgreSQL is used to store and organize data effectively. Furthermore, the system's testing and deployment are carried out using Docker to ensure flexibility and optimal performance.
 \end{abstract}
 
 \iffalse
@@ -31,10 +29,16 @@ Dedication page is optional.
 \fi % \iffalse
 
 \begin{acknowledgments}
-Your acknowledgments go here. Make sure it sits inside the
-\texttt{acknowledgment} environment.
 
-\acksign{2020}{5}{25}
+โครงงานนี้จะไม่สามารถสำเร็จลุล่วงไปได้ หากไม่ได้รับความอนุเคราะห์และการสนับสนุนจากหลายฝ่าย ข้าพเจ้าขอแสดงความขอบคุณเป็นอย่างยิ่งต่อ ผศ.โดม โพธิกานนท์ อาจารย์ที่ปรึกษาโครงงาน ที่สละเวลาอันมีค่าให้คำแนะนำ ให้แนวคิด และชี้แนะแหล่งความรู้ที่จำเป็นสำหรับการพัฒนาเว็บแอปพลิเคชัน ตลอดจนช่วยตรวจสอบและแก้ไขข้อบกพร่องต่าง ๆ ด้วยความเอาใจใส่มาโดยตลอด
+
+นอกจากนี้ ข้าพเจ้าขอขอบพระคุณ ผศ.ดร.ลัชนา ระมิงค์วงศ์ และ อ.ดร.นษิ ตันติธารานุกุล ที่ให้คำปรึกษาและข้อเสนอแนะอันเป็นประโยชน์ จนทำให้โครงงานนี้มีความสมบูรณ์ยิ่งขึ้น
+
+ขอขอบคุณเพื่อนๆ และรุ่นพี่ทุกท่าน ที่คอยให้คำแนะนำ ให้กำลังใจ และเป็นแรงสนับสนุนตลอดมา ซึ่งเป็นพลังผลักดันสำคัญที่ทำให้ข้าพเจ้ามุ่งมั่นและตั้งใจทำงานจนสามารถพัฒนาโครงงานนี้จนสำเร็จ
+
+สุดท้ายนี้ ข้าพเจ้าขอขอบพระคุณทุกท่านที่ไม่ได้เอ่ยนาม ณ ที่นี้ ซึ่งได้ให้ความช่วยเหลือและสนับสนุนโครงงานในรูปแบบต่างๆ ตลอดระยะเวลาการดำเนินงาน ขอบพระคุณเป็นอย่างสูง
+
+\acksign{2025}{3}{5}
 \end{acknowledgments}%
 \fi % \ifproject
 
